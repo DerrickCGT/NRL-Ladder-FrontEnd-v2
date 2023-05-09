@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>NRL Ladder Site</h1>
+    <p class="lead">Welcome to NRL ladder Site! Here you can find all the latest news, updates and information related to the National Rugby League.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div>
+    @Html.ActionLink("NRL Leagues", "Index", "Leagues")<br />
+    @Html.ActionLink("Seasons List", "Index", "Seasons")<br />
+    @Html.ActionLink("NRL Ladders", "Index", "Ladders")<br />
+    @Html.ActionLink("Teams List", "Index", "Teams")<br />
+    @Html.ActionLink("Players List", "Index", "Players")
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>League</h2>
+        <p>
+            Learn about the different leagues within the NRL and their histories.
+        </p>
+        <p>
+            <a class="btn btn-default" href="/Leagues">View Leagues &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Seasons</h2>
+        <p>Explore the past and current seasons of the NRL, including ladder rankings, match schedules, and results.</p>
+        <p><a class="btn btn-default" href="/Seasons">View Seasons &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Teams</h2>
+        <p>Discover the teams competing in the NRL, their rosters, and their recent performances.</p>
+        <p><a class="btn btn-default" href="/Teams">View Teams &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Players</h2>
+        <p>Find out about the players competing in the NRL, including their stats, bios, and career highlights.</p>
+        <p><a class="btn btn-default" href="/Players">View Players &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Ladder</h2>
+        <p>Stay up to date with the current ladder rankings for the NRL.</p>
+        <p><a class="btn btn-default" href="/Ladder">View Ladder &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>News</h2>
+        <p>Get the latest news and updates about the NRL and its teams, players, and matches.</p>
+        <p><a class="btn btn-default" href="/News">View News &raquo;</a></p>
+    </div>
+
+</div>

@@ -1,0 +1,58 @@
+﻿@model NRL_Ladder_FrontEnd_v2.Models.Team
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Team</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalWins)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalWins)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalLosses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalLosses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearFounded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearFounded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Members)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Members)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Stadium)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stadium)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TeamName }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,95 @@
+﻿@model IEnumerable<NRL_Ladder_FrontEnd_v2.Models.Ladder>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Rank)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Team.TeamName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Points)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Wins)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Drawn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Byes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.For)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Against)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Differential)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Season.SeasonID)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rank)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Team.TeamName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Points)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wins)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Drawn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Byes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.For)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Against)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Differential)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Season.SeasonID)
+        </td>
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { seasonID = item.SeasonID, teamName = item.TeamName }) |
+            @Html.ActionLink("Details", "Details", new { seasonID = item.SeasonID, teamName = item.TeamName }) |
+            @Html.ActionLink("Delete", "Delete", new { seasonID = item.SeasonID, teamName = item.TeamName })
+        </td>
+    </tr>
+}
+
+</table>

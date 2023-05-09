@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NRL Ladder FrontEnd v2", "NRL Ladder FrontEnd v2\NRL Ladder FrontEnd v2.csproj", "{899EEC30-AFFB-4A32-992F-5A2F7A8D187F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{899EEC30-AFFB-4A32-992F-5A2F7A8D187F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899EEC30-AFFB-4A32-992F-5A2F7A8D187F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899EEC30-AFFB-4A32-992F-5A2F7A8D187F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899EEC30-AFFB-4A32-992F-5A2F7A8D187F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E98BA53E-3968-4712-ADF6-8C80008E513C}
+	EndGlobalSection
+EndGlobal
