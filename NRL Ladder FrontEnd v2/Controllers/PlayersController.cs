@@ -17,8 +17,11 @@ namespace NRL_Ladder_FrontEnd_v2.Controllers
         // GET: Players
         public ActionResult Index()
         {
-            var players = db.Players.Include(p => p.Team);
-            return View(players.ToList());
+            //var players = db.Players.Include(p => p.Team);
+            //return View(players.ToList());
+
+            var players = db.Players.SqlQuery("SELECT * FROM Players ORDER BY TeamName ASC, PlayerName ASC").ToList();
+            return View(players);
         }
 
         // GET: Players/Details/5
